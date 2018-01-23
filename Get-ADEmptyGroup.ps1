@@ -43,6 +43,7 @@ Function Get-ADEmptyGroup
         # Exchanges SQL Server built-in groups
         [Switch]$ExcludeSqlServerBuiltIn
     )
+    Set-StrictMode -Version 2.0
 
     try {
         # Exchange Role Groups
